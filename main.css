@@ -1,8 +1,8 @@
 .slika {
-  height: 64px;
+  /*height: 64px;*/
 }
 .brand-logo {
-  background-color: white;
+  /* background-color: white;*/
   margin-left: 50px;
 }
 
@@ -13,9 +13,9 @@
 }
 @media (max-width: 600px) {
   .slika {
-    height: 56px;
+    /* height: 56px; */
   }
-  .brand-logo {
+  /*.brand-logo {
     margin-left: 0;
-  }
+  }*/
 }
