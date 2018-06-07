@@ -121,10 +121,7 @@ body {
   .lista {
     font-size: 12pt;
   }
-  .strelica {
-    position: initial;
-  }
-  .strelica-wrapper {
-    text-align: center;
+  .kont-card {
+    height: 350px;
   }
 }
