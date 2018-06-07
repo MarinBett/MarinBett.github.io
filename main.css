@@ -51,7 +51,7 @@ body {
 .btn-nevidljivi {
   background-color: #ef7f1e !important;
 }
-.page-footer {
+footer {
   background-color: #ef7f1e !important;
 }
 @media (max-width: 1100px) {
