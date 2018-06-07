@@ -48,6 +48,9 @@ body {
 .lista {
   font-size: 16pt;
 }
+.btn-nevidljivi {
+  background-color: #ef7f1e !important;
+}
 .page-footer {
   background-color: #ef7f1e !important;
 }
