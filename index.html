@@ -12,11 +12,11 @@
 </head>
 
 <body>
+    <!-- NAVIGATION -->
     <nav>
         <div class="nav-wrapper orange">
             <a href="#!" class="brand-logo">
-                <!--<img src="http://www.upravitelj-st.hr/images/logo.png" class="slika" />-->
-                Upravitelj&nbsp;d.o.o.
+                <!-- <img src="http://www.upravitelj-st.hr/images/logo.png" class="slika" />-->Upravitelj&nbsp;d.o.o.
             </a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                 <i class="material-icons">menu</i>
@@ -58,6 +58,80 @@
             <a href="#">Kontakt</a>
         </li>
     </ul>
+    <!-- NAVIGATION END -->
+
+    <!-- CAROUSEL -->
+    <div class="carousel carousel-slider hide-on-med-and-down">
+        <a class="carousel-item" href="#one!">
+            <img src="http://www.upravitelj-st.hr/couch/uploads/image/01.jpg" class="slikice">
+        </a>
+        <a class="carousel-item" href="#two!">
+            <img src="http://www.upravitelj-st.hr/couch/uploads/image/02.jpg" class="slikice">
+        </a>
+        <a class="carousel-item" href="#three!">
+            <img src="http://www.upravitelj-st.hr/couch/uploads/image/12.jpg" class="slikice">
+        </a>
+    </div>
+    <!-- CAROUSEL END -->
+
+    <!-- CAROUSEL OVERLAY -->
+    <div id="overlay" class="hide-on-med-and-down"></div>
+    <!-- CAROUSEL OVERLAY END-->
+
+
+    <div class="row">
+        <!-- PONUDA CARD -->
+        <div class="col s12 m6">
+            <div class="card-panel orange hoverable center-align">
+                <h2 class="white-text">ZATRAŽITE PONUDU ZA UPRAVLJANJE</h2>
+                <a href="#" class="white-text">
+                    <i class="material-icons medium">forward</i>
+                </a>
+            </div>
+        </div>
+        <!-- PONUDA CARD END-->
+        <!-- KONTAKT CARD -->
+        <div class="col s12 m6">
+            <div class="card-panel orange hoverable">
+                <h2 class="white-text center-align">KONTAKTIRAJTE NAS
+                </h2>
+                <h5 class="white-text">
+                    <div class="row">
+                        <div class="col m9">
+                            <ul>
+                                <li>TEL.: 021/380 830</li>
+                                <li>UPRAVITELJ@ST.T-COM.HR</li>
+                                <li>INTERVENCIJE:</li>
+                                <li>091/795 79 22</li>
+                            </ul>
+                        </div>
+
+                        <div class="col m3">
+                            <a href="#" class="white-text strelica">
+                                <i class="material-icons medium">forward</i>
+                            </a>
+                        </div>
+                    </div>
+                </h5>
+            </div>
+        </div>
+        <!-- KONTAKT CARD END-->
+    </div>
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="page-footer orange center-align">
+        <!-- <div class="footer-copyright"></div> -->
+        <div class="container">
+            © 2018 Upravitelj d.o.o.
+        </div>
+        <!-- </div> -->
+    </footer>
+    <!-- FOOTER END -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
@@ -65,7 +139,18 @@
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: false
+            });
+
+            autoplay()
+            function autoplay() {
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 4500);
+            }
         });
+
     </script>
 </body>
 
