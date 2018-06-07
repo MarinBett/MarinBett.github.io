@@ -1,6 +1,9 @@
 body {
   height: 100%;
 }
+.nav-wrapper {
+  background-color: #ef7f1e !important;
+}
 .slika {
   /*height: 64px;*/
 }
@@ -30,21 +33,98 @@ body {
 }
 .card-panel {
   height: 300px;
+  background-color: #ef7f1e !important;
 }
 .strelica {
   position: relative;
   top: 50px;
 }
+.naslov {
+  font-size: 36pt;
+}
+.strelica1 {
+  margin-top: 20px;
+}
+.lista {
+  font-size: 16pt;
+}
+.page-footer {
+  background-color: #ef7f1e !important;
+}
+@media (max-width: 1100px) {
+  .naslov {
+    font-size: 30pt;
+  }
+  .lista {
+    font-size: 14pt;
+  }
+}
 @media (max-width: 991px) {
   .brand-logo {
     margin-left: 0;
   }
+  .naslov {
+    font-size: 30pt;
+  }
+  .lista {
+    font-size: 14pt;
+  }
+}
+@media (max-width: 750px) {
+  .naslov {
+    font-size: 28pt;
+  }
+  .lista {
+    font-size: 14pt;
+  }
+}
+@media (max-width: 650px) {
+  .naslov {
+    font-size: 26pt;
+  }
+  .lista {
+    font-size: 12pt;
+  }
 }
 @media (max-width: 600px) {
-  .slika {
-    /* height: 56px; */
+  .naslov {
+    font-size: 36pt;
   }
-  /*.brand-logo {
-    margin-left: 0;
-  }*/
+  .lista {
+    font-size: 14pt;
+  }
+  .strelica {
+    position: initial;
+  }
+  .strelica-wrapper {
+    text-align: center;
+  }
+}
+@media (max-width: 540px) {
+  .naslov {
+    font-size: 32pt;
+  }
+  .lista {
+    font-size: 14pt;
+  }
+  .strelica {
+    position: initial;
+  }
+  .strelica-wrapper {
+    text-align: center;
+  }
+}
+@media (max-width: 475px) {
+  .naslov {
+    font-size: 28pt;
+  }
+  .lista {
+    font-size: 12pt;
+  }
+  .strelica {
+    position: initial;
+  }
+  .strelica-wrapper {
+    text-align: center;
+  }
 }
