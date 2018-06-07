@@ -4,9 +4,6 @@ body {
 .nav-wrapper {
   background-color: #ef7f1e !important;
 }
-.slika {
-  /*height: 64px;*/
-}
 .brand-logo {
   /* background-color: white;*/
   margin-left: 50px;
@@ -124,10 +121,7 @@ body {
   .lista {
     font-size: 12pt;
   }
-  .strelica {
-    position: initial;
-  }
-  .strelica-wrapper {
-    text-align: center;
+  .kont-card {
+    height: 350px;
   }
 }
