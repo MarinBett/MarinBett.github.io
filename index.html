@@ -1,8 +1,66 @@
 <html>
+
 <head>
-<title>Prva GitHub Web Stranica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="/main.css">
+    <title>Prva GitHub Web Stranica</title>
 </head>
+
 <body>
-<h1>Moja prva GitHub stranica!!</h1>
+    <nav>
+        <div class="nav-wrapper orange">
+            <a href="#!" class="brand-logo">
+                <img src="http://www.upravitelj-st.hr/images/logo.png" class="slika" />
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="#">Naslovna</a>
+                </li>
+                <li>
+                    <a href="#">O nama</a>
+                </li>
+                <li>
+                    <a href="#">Projekti</a>
+                </li>
+                <li>
+                    <a href="#">Informacije</a>
+                </li>
+                <li>
+                    <a href="#">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <a href="#">Naslovna</a>
+        </li>
+        <li>
+            <a href="#">O nama</a>
+        </li>
+        <li>
+            <a href="#">Projekti</a>
+        </li>
+        <li>
+            <a href="#">Informacije</a>
+        </li>
+        <li>
+            <a href="#">Kontakt</a>
+        </li>
+    </ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
 </body>
+
 </html>
