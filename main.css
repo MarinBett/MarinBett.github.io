@@ -127,4 +127,7 @@ footer {
   .kont-card {
     height: 350px;
   }
+  footer {
+    background-color: #ef7f1e !important;
+  }
 }
