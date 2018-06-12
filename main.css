@@ -1,8 +1,11 @@
 body {
   height: 100%;
 }
-.nav-wrapper {
+.bcg-orng {
   background-color: #ef7f1e !important;
+}
+.txt-orng {
+  color: #ef7f1e !important;
 }
 .brand-logo {
   /* background-color: white;*/
@@ -14,6 +17,11 @@ body {
 .slikice {
   height: 600px;
   object-fit: fill;
+}
+.slika-cover {
+  object-fit: fill !important;
+  width: 80%;
+  height: 450px;
 }
 #overlay {
   position: absolute; /* Sit on top of the page content */
@@ -33,7 +41,6 @@ body {
 }
 .card-panel {
   height: 300px;
-  background-color: #ef7f1e !important;
 }
 .strelica {
   position: relative;
@@ -48,11 +55,33 @@ body {
 .lista {
   font-size: 16pt;
 }
-.btn-nevidljivi {
-  background-color: #ef7f1e !important;
+.aboutUpraviteljCard {
+  display: flex;
+  flex-direction: column;
+  /*min-height: 50vh;*/
+  height: 100%;
 }
-footer {
-  background-color: #ef7f1e !important;
+.flex-content {
+  flex: 1;
+  margin-left: -15% !important;
+  margin-right: -15% !important;
+}
+.card-naslov {
+  font-size: 28pt;
+  font-weight: bolder;
+}
+.tab a {
+  color: black !important;
+}
+.tab a.active {
+  color: black !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.tabs .indicator {
+  background-color: black !important;
+}
+.tab {
+  display: inline-block !important;
 }
 @media (max-width: 1100px) {
   .naslov {
@@ -71,6 +100,10 @@ footer {
   }
   .lista {
     font-size: 14pt;
+  }
+  .flex-content {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 @media (max-width: 750px) {
