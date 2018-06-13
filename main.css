@@ -25,47 +25,29 @@ body {
 }
 .box {
   position: relative;
-<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
   width: 70%;
   margin: 0 auto;
-=======
-  display: inline-block;
-  width: 70%;
->>>>>>> 9fe7b193c2587296da949b5009bb974bcaeb4b41
 }
 .box::before {
   content: "";
   position: absolute;
-<<<<<<< HEAD
   background: rgba(0, 0, 0, 0.7);
   height: 15%;
   left: 0;
   bottom: 0;
-=======
-  background: rgba(0, 0, 0, 0.5);
-  height: 15%;
-  left: 0;
-  bottom: 5px;
->>>>>>> 9fe7b193c2587296da949b5009bb974bcaeb4b41
   right: 0;
 }
 .img-desc {
   color: white;
   font-size: 20pt;
   font-weight: bold;
-<<<<<<< HEAD
   z-index: 10;
   position: absolute;
   bottom: 1vw;
   max-width: 100%;
-=======
-  z-index: 5;
-  position: absolute;
-bottom:5%;
->>>>>>> 9fe7b193c2587296da949b5009bb974bcaeb4b41
 }
 #overlay {
   position: absolute; /* Sit on top of the page content */
@@ -154,12 +136,9 @@ bottom:5%;
     max-width: 100%;
     height: auto;
   }
-<<<<<<< HEAD
   .img-desc {
     font-size: 16pt;
   }
-=======
->>>>>>> 9fe7b193c2587296da949b5009bb974bcaeb4b41
 }
 @media (max-width: 750px) {
   .naslov {
