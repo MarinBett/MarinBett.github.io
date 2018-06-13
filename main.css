@@ -160,6 +160,7 @@ body {
   }
   .img-desc {
     font-size: 12pt;
+    bottom: 0.5vw;
   }
 }
 @media (max-width: 600px) {
