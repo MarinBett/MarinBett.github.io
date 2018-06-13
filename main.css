@@ -7,6 +7,11 @@ body {
 .txt-orng {
   color: #ef7f1e !important;
 }
+.txt-justify {
+  text-align: justify;
+  text-justify: newspaper;
+  word-spacing: 1px;
+}
 .brand-logo {
   /* background-color: white;*/
   margin-left: 50px;
