@@ -152,12 +152,12 @@
     <!-- IZDVOJENI PROJEKTI CARD -->
     <div class="row">
         <div class="col s12 m12 l12">
-            <div class="card hoverable">
+            <div class="card hoverable projekti">
                 <div class="card-content center-align">
                     <p class="txt-orng flow-text card-naslov">IZDVOJENI PROJEKTI</p>
                 </div>
                 <div class="card-tabs">
-                    <ul class="tabs tabs-fixed-width">
+                    <ul class="tabs tabs-fixed-width" id="tabs-swipe-demo">
                         <li class="tab">
                             <a href="#tab1" class="active">Lička 15, Split</a>
                         </li>
@@ -179,39 +179,37 @@
                     <div class="row">
                         <div class="col s12 m12 l12">
                             <div id="tab1">
-                                <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/picture-016-450x338.jpg" class="slika-cover">
+                                <div class="box">
+                                    <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/picture-016-450x338.jpg" class="slika-cover">
+                                    <span class="img-desc">Lička 15, Split</span>
+                                </div>
                             </div>
                             <div id="tab2">
-                                <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/picture-001-450x338.jpg" class="slika-cover">
+                                <div class="box">
+                                    <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/picture-001-450x338.jpg" class="slika-cover">
+                                    <span class="img-desc">Šižgorićeva 12, Split</span>
+                                </div>
                             </div>
                             <div id="tab3">
-                                <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/p1010016_-450x338.jpg" class="slika-cover">
+                                <div class="box">
+                                    <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/p1010016_-450x338.jpg" class="slika-cover">
+                                    <span class="img-desc">Getaldićeva 21, Split</span>
+                                </div>
                             </div>
                             <div id="tab4">
-                                <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/fotografija0080-450x338.jpg" class="slika-cover">
+                                <div class="box">
+                                    <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/fotografija0080-450x338.jpg" class="slika-cover">
+                                    <span class="img-desc">Sukoišanska 25, Split</span>
+                                </div>
                             </div>
                             <div id="tab5">
-                                <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/fotografija-0107-450x360.jpg" class="slika-cover">
+                                <div class="box">
+                                    <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/fotografija-0107-450x360.jpg" class="slika-cover">
+                                    <span class="img-desc">Stepinčeva 32, Split</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="carousel carousel-slider">
-                        <a class="carousel-item" href="#one!">
-                            <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/picture-016-450x338.jpg" id="tab1">
-                        </a>
-                        <a class="carousel-item" href="#two!">
-                            <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/picture-001-450x338.jpg" id="tab2">
-                        </a>
-                        <a class="carousel-item" href="#three!">
-                            <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/p1010016_-450x338.jpg" id="tab3">
-                        </a>
-                        <a class="carousel-item" href="#four!">
-                            <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/fotografija0080-450x338.jpg" id="tab4">
-                        </a>
-                        <a class="carousel-item" href="#five!">
-                            <img src="http://www.upravitelj-st.hr/couch/uploads/image/projekti/fotografija-0107-450x360.jpg" id="tab5">
-                        </a>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -242,10 +240,11 @@
                 setTimeout(autoplay, 4500);
             }
             $('.tabs').tabs();
-            $('.carousel.carousel-slider').carousel({
-                fullWidth: true,
-                indicators: false
-            });
+            if ($('#tabs-swipe-demo').length) {
+                $('#tabs-swipe-demo').tabs({
+                    swipeable: true,
+                });
+            }
         });
     </script>
 </body>
