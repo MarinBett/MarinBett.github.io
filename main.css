@@ -1,3 +1,9 @@
+/* OPĆENITO */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   height: 100%;
 }
@@ -12,21 +18,88 @@ body {
   text-justify: newspaper;
   word-spacing: 1px;
 }
+.uppercase {
+  text-transform: uppercase;
+}
+/* NAVIGATION */
 .brand-logo {
-  /* background-color: white;*/
   margin-left: 50px;
 }
+/* CAROUSEL */
 .carousel-pocetni {
-  height: 500px !important;
+  height: 60vh !important;
 }
 .slikice {
   height: 600px;
   object-fit: fill;
 }
+/* CAROUSEL OVERLAY */
+#overlay {
+  position: absolute; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 60vh; /* Full height (cover the whole page) */
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+/* PONUDA I KONTAKT KARTICE */
+.naslov {
+  font-size: 36pt;
+}
+.podcrtaj {
+  text-decoration: underline;
+}
+.strelica {
+  position: relative;
+  top: 50px;
+}
+.strelica1 {
+  margin-top: 20px;
+}
+.lista {
+  font-size: 16pt;
+}
+.card-panel-ponIkont {
+  height: 300px !important;
+}
+/* UPRAVITELJ TEXT CARD */
+.aboutUpraviteljCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.flex-content {
+  flex: 1;
+  margin-left: -15% !important;
+  margin-right: -15% !important;
+}
+/* IZDVOJENI PROJEKTI */
 .slika-cover {
   object-fit: fill !important;
   width: 100%;
   height: 450px;
+}
+.card-naslov {
+  font-size: 28pt;
+  font-weight: bolder;
+}
+.tab a {
+  color: black !important;
+}
+.tab a.active {
+  color: black !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.tabs .indicator {
+  background-color: black !important;
+}
+.tab {
+  display: inline-block !important;
 }
 .box {
   position: relative;
@@ -54,72 +127,66 @@ body {
   bottom: 1vw;
   max-width: 100%;
 }
-#overlay {
-  position: absolute; /* Sit on top of the page content */
-  display: block; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 500px; /* Full height (cover the whole page) */
-  top: 64px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+/* SLIKA 250 OBJEKATA */
+.card-panel-pano {
+  height: 750px !important;
 }
-.podcrtaj {
-  text-decoration: underline;
-}
-.card-panel {
-  height: 300px;
-}
-.strelica {
+.pano {
+  background: url("http://www.upravitelj-st.hr/images/loc_bck.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+  background-size: cover;
   position: relative;
-  top: 50px;
 }
-.naslov {
-  font-size: 36pt;
-}
-.strelica1 {
-  margin-top: 20px;
-}
-.lista {
-  font-size: 16pt;
-}
-.aboutUpraviteljCard {
-  display: flex;
-  flex-direction: column;
-  /*min-height: 50vh;*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(145, 204, 215, 0.3);
+  width: 100%;
   height: 100%;
+  z-index: 2;
 }
-.flex-content {
-  flex: 1;
-  margin-left: -15% !important;
-  margin-right: -15% !important;
+.pano-content {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 10%;
+  padding: 20px;
+  letter-spacing: 5px;
 }
-.card-naslov {
-  font-size: 28pt;
-  font-weight: bolder;
+.small {
+  font-size: 65px;
+  display: inline-block;
 }
-.tab a {
-  color: black !important;
+.medium {
+  font-size: 80px;
+  margin-top: -20px;
 }
-.tab a.active {
-  color: black !important;
-  background-color: rgba(0, 0, 0, 0.1) !important;
+#nar250 {
+  font-size: 160px;
+  font-weight: 900;
+  display: inline-block;
 }
-.tabs .indicator {
-  background-color: black !important;
-}
-.tab {
-  display: inline-block !important;
-}
+/* MEDIA QUERIES */
 @media (max-width: 1100px) {
   .naslov {
     font-size: 30pt;
   }
   .lista {
     font-size: 14pt;
+  }
+  .small {
+    font-size: 65px;
+  }
+  .medium {
+    font-size: 80px;
+  }
+  #nar250 {
+    font-size: 160px;
+    height: 160px;
   }
 }
 @media (max-width: 991px) {
@@ -144,6 +211,33 @@ body {
   .img-desc {
     font-size: 16pt;
   }
+  .small {
+    font-size: 55px;
+  }
+  .medium {
+    font-size: 70px;
+  }
+  #nar250 {
+    font-size: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 885px) {
+  .small {
+    font-size: 45px;
+  }
+  .medium {
+    font-size: 60px;
+  }
+  #nar250 {
+    font-size: 140px;
+  }
+  .card-panel-pano {
+    height: 550px !important;
+  }
+  .pano {
+    height: 500px;
+  }
 }
 @media (max-width: 750px) {
   .naslov {
@@ -154,6 +248,15 @@ body {
   }
   .img-desc {
     font-size: 14pt;
+  }
+  .small {
+    font-size: 35px;
+  }
+  .medium {
+    font-size: 50px;
+  }
+  #nar250 {
+    font-size: 130px;
   }
 }
 @media (max-width: 650px) {
@@ -166,6 +269,19 @@ body {
   .img-desc {
     font-size: 12pt;
     bottom: 0.5vw;
+  }
+  .small {
+    font-size: 35px;
+    margin-top: 50px;
+  }
+  .medium {
+    font-size: 40px;
+  }
+  #nar250 {
+    font-size: 130px;
+    display: block;
+    margin-top: -50px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 600px) {
@@ -184,6 +300,9 @@ body {
   .img-desc {
     font-size: 10pt;
   }
+  #nar250 {
+    font-size: 130px;
+  }
 }
 @media (max-width: 540px) {
   .naslov {
@@ -201,8 +320,23 @@ body {
   .img-desc {
     font-size: 8pt;
   }
+  .small {
+    font-size: 35px;
+    display: block;
+  }
+  .medium {
+    font-size: 40px;
+    display: block;
+  }
+  #nar250 {
+    font-size: 130px;
+    margin-top: -60px;
+  }
+  .pano-content {
+    left: auto;
+  }
 }
-@media (max-width: 475px) {
+@media (max-width: 500px) {
   .naslov {
     font-size: 28pt;
   }
@@ -214,5 +348,42 @@ body {
   }
   footer {
     background-color: #ef7f1e !important;
+  }
+  .small {
+    font-size: 35px;
+  }
+  .medium {
+    font-size: 35px;
+  }
+  #nar250 {
+    font-size: 130px;
+  }
+}
+@media (max-width: 450px) {
+  .small {
+    font-size: 25px;
+  }
+  .medium {
+    font-size: 40px;
+    display: inline;
+    line-height: 90%;
+  }
+  #nar250 {
+    font-size: 100px;
+    margin-top: -30px;
+    margin-bottom: -20px;
+  }
+}
+@media (max-width: 360px) {
+  .small {
+    font-size: 25px;
+  }
+  .medium {
+    font-size: 35px;
+    margin-top: 5px;
+  }
+  #nar250 {
+    font-size: 100px;
+    margin-top: -30px;
   }
 }
